@@ -4,14 +4,14 @@ pipeline{
     stages('CI') {
         Stage('Checkout') {
             steps {
-                echo 'Checkout'
+                echo 'Checkout' 
             }
         }
 
         Stage('Build') {
             steps {
                 // script
-                echo 'Build'
+                echo 'Checkout'            
             }
         }
 
