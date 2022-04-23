@@ -11,7 +11,7 @@ pipeline{
         Stage('Build') {
             steps {
                 // script
-                echo 'Checkout'
+                echo 'Build'
             }
         }
 
