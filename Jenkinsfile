@@ -10,12 +10,14 @@ pipeline{
 
         Stage('Build') {
             steps {
+                // script
                 echo 'Checkout'
             }
         }
 
         Stage('Test') {
             steps {
+                // script
                 echo 'Test'
             }
         }
