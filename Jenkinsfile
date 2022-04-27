@@ -2,20 +2,20 @@ pipeline{
     agent any
 
     stages('CI') {
-        Stage('Checkout') {
+        stage('Checkout') {
             steps {
                 echo 'Checkout' 
             }
         }
 
-        Stage('Build') {
+        stage('Build') {
             steps {
                 // script
                 echo 'Checkout'            
             }
         }
 
-        Stage('Test') {
+        stage('Test') {
             steps {
                 // script
                 echo 'Test'
