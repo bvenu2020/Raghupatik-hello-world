@@ -5,13 +5,14 @@ pipeline{
         stage('Checkout') {
             steps {
                 echo 'Checkout' 
+                checkout scm
             }
         }
 
         stage('Build') {
             steps {
                 // script
-                echo 'Checkout'            
+                sh 'mvn clean package'           
             }
         }
 
@@ -19,6 +20,7 @@ pipeline{
             steps {
                 // script
                 echo 'Test'
+                sh 'mvn test'
             }
         }
     
