@@ -1,7 +1,7 @@
 pipeline{
     agent any
 
-    stages('CI') {
+    stages {
         stage('Checkout') {
             steps {
                 echo 'Checkout' 
@@ -12,17 +12,9 @@ pipeline{
         stage('Build') {
             steps {
                 // script
-                sh 'mvn clean package'           
+                echo 'Build'
+                sh 'mvn clean install'           
             }
         }
-
-        stage('Test') {
-            steps {
-                // script
-                echo 'Test'
-                sh 'mvn test'
-            }
-        }
-    
     }
 }
