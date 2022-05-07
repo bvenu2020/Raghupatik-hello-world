@@ -19,7 +19,7 @@ public class TestGreeter {
 
   @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
-    String someone = "World 1234";
+    String someone = "World 123";
 
     assertThat(greeter.greet(someone), containsString(someone));
   }
